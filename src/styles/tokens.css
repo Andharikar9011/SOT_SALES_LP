@@ -1,0 +1,79 @@
+/* Static design tokens (design-system/css-variables-guide.md) + default theme.
+   Theme colors are overwritten at runtime by applyTheme(content.theme). */
+:root {
+  /* Default theme (placeholder palette; prevents flash before content.json arrives) */
+  --color-background: #0B1B33;
+  --color-surface: #132B4D;
+  --color-surface-raised: #1B3A66;
+  --color-border: #5F7FAE;
+  --color-text: #F4F8FF;
+  --color-text-muted: #B4C4DE;
+  --color-primary: #1A5FBF;
+  --color-on-primary: #FFFFFF;
+  --color-primary-text: #7DB2FF;
+  --color-accent: #FF6B35;
+  --color-on-accent: #1A0A02;
+  --color-success: #4ADE80;
+  --color-error: #FF8A8A;
+  --color-warning: #FBBF24;
+  --color-focus-ring: #7DB2FF;
+  --color-scene-background: #0B1B33;
+
+  /* Typography */
+  --font-heading: 'Outfit Variable', 'Outfit', 'Inter Variable', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-display: clamp(2.25rem, 5vw + 1rem, 4rem);
+  --fs-h1: clamp(2rem, 3.5vw + 1rem, 3rem);
+  --fs-h2: clamp(1.625rem, 2vw + 1rem, 2.25rem);
+  --fs-h3: 1.5rem;
+  --fs-h4: 1.25rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-stat: clamp(2.5rem, 4vw + 1rem, 3.5rem);
+  --lh-tight: 1.15;
+  --lh-body: 1.6;
+
+  /* Spacing (8px base) */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 40px; --space-8: 48px;
+  --space-9: 60px; --space-10: 64px;
+
+  /* Shape and elevation */
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px; --radius-xl: 24px; --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.30);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.35);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,.45);
+  --shadow-fab: 0 6px 20px rgba(0,0,0,.50);
+  --backdrop: rgba(0,0,0,.6);
+
+  /* Layers */
+  --z-canvas: 0; --z-drawer: 30; --z-header: 50; --z-fab: 60; --z-mentor: 70;
+  --z-modal-backdrop: 90; --z-modal: 100; --z-booking: 110; --z-toast: 120;
+
+  /* Layout */
+  --header-h: 60px;
+  --container: 1200px;
+  --modal-max-width: 600px;
+  --booking-max-width: 720px;
+  --drawer-max-width: 960px;
+  --drawer-h: 65dvh;
+  --touch-target: 44px;
+  --fab-size: 56px;
+  --input-height: 44px;
+  --button-height: 48px;
+  --section-pad: 40px;
+  --edge: max(var(--space-4), env(safe-area-inset-left));
+  --edge-bottom: max(var(--space-4), env(safe-area-inset-bottom));
+
+  /* Motion */
+  --dur-instant: 0ms; --dur-quick: 150ms; --dur-fast: 200ms; --dur-default: 300ms;
+  --dur-slow: 500ms; --dur-story: 1500ms; --dur-counter: 1000ms;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 1024px) { :root { --header-h: 70px; --section-pad: 60px; --drawer-h: 62dvh; } }
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-default: 100ms; --dur-slow: 100ms; --dur-story: 0ms; --dur-counter: 0ms; --dur-fast: 100ms; --dur-quick: 100ms; }
+}

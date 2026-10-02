@@ -1,0 +1,21 @@
+/* Breakpoints (mobile-first): tablet >= 768px, desktop >= 1024px, wide >= 1440px */
+@media (min-width: 768px) {
+  .drawer__content { padding-inline: var(--space-5); }
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+  .timeline__track { display: none; }
+  .timeline__list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6) var(--space-5); }
+  .footer__cols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .static-hero__stages { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .timeline__body { padding-top: 0; }
+  .timeline__track { display: block; left: 0; right: 0; top: 19px; bottom: auto; width: auto; height: 3px; }
+  .timeline__fill { transform-origin: left; transform: scaleX(var(--progress, 0)); }
+  .timeline__list { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-5); }
+  .phase { padding-left: 0; padding-top: 56px; }
+  .phase__num { top: 0; }
+}
+@media (min-width: 1440px) {
+  :root { --edge: max(var(--space-5), env(safe-area-inset-left)); }
+}

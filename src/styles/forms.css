@@ -1,0 +1,35 @@
+/* Form fields, validation, actions */
+.form { display: grid; gap: var(--space-4); }
+.field { display: grid; gap: var(--space-1); }
+.field__label { font-size: var(--fs-small); font-weight: 600; }
+.field__req { font-weight: 400; color: var(--color-text-muted); }
+
+.input { width: 100%; min-height: var(--input-height); padding: 0 var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text); font-size: var(--fs-body); transition: border-color var(--dur-quick) var(--ease-out), box-shadow var(--dur-quick) var(--ease-out); }
+.input:hover { border-color: var(--color-text-muted); }
+.input:focus { border-color: var(--color-primary-text); box-shadow: 0 0 0 1px var(--color-primary-text); }
+.input[readonly], .input:disabled { opacity: 0.5; }
+.input::placeholder { color: var(--color-text-muted); opacity: 0.8; }
+.textarea { padding: var(--space-3) var(--space-4); min-height: 96px; resize: vertical; line-height: var(--lh-body); }
+.select { appearance: none; -webkit-appearance: none; padding-right: var(--space-8); background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%); background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; }
+.select option { color: var(--color-text); background: var(--color-surface); }
+
+.field--error .input { border-color: var(--color-error); box-shadow: 0 0 0 1px var(--color-error); }
+.field__error { display: flex; gap: var(--space-2); align-items: flex-start; color: var(--color-error); font-size: var(--fs-small); }
+.field__error svg { flex: none; margin-top: 2px; }
+
+.form__summary { display: flex; gap: var(--space-3); padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--color-surface-raised); border: 2px solid var(--color-error); color: var(--color-error); font-size: var(--fs-small); }
+.form__summary svg { flex: none; }
+.form__summary ul { margin-top: var(--space-1); display: grid; gap: var(--space-1); }
+.form__summary a { color: var(--color-error); }
+
+.form__actions { display: flex; gap: var(--space-3); justify-content: flex-end; }
+.form__trust { text-align: center; color: var(--color-text-muted); font-size: var(--fs-small); }
+
+@media (max-width: 767px) {
+  /* Sticky footer for the submit button on full-screen modals */
+  .form__actions { position: sticky; bottom: calc(-1 * var(--space-4)); padding-block: var(--space-3); background: var(--color-surface); }
+  .form__actions .btn { flex: 1; }
+}
+
+/* Spam honeypot: off-screen, not display:none (some bots skip those) */
+.hp-field { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }

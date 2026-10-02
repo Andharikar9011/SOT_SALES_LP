@@ -1,0 +1,5 @@
+# TEMPLATE. Replace example.com with the real production domain before launch (see app/docs/DEPLOYMENT.md).
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml

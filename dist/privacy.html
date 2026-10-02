@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Privacy Policy | Skills of Tomorrow</title>
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<style>
+  /* Placeholder page. Colors mirror the default theme in content.json; the page cannot read that file synchronously, so it applies it in the script below when available. */
+  :root { --bg: #0B1B33; --surface: #132B4D; --text: #F4F8FF; --muted: #B4C4DE; --accent: #FF6B35; --on-accent: #1A0A02; --border: #5F7FAE; --focus: #7DB2FF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; line-height: 1.6; }
+  main { max-width: 42rem; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-family: 'Outfit Variable', Outfit, Inter, system-ui, sans-serif; font-size: clamp(1.75rem, 4vw + 1rem, 2.5rem); line-height: 1.15; margin: 0 0 24px; }
+  .notice { padding: 16px 20px; border: 2px dashed var(--accent); border-radius: 12px; background: var(--surface); }
+  .notice strong { color: var(--accent); }
+  p { color: var(--muted); }
+  a { color: var(--accent); }
+  a.back { display: inline-flex; align-items: center; min-height: 44px; margin-top: 24px; }
+  a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main id="main">
+  <h1>Privacy Policy</h1>
+  <div class="notice" role="note">
+    <p style="margin:0;color:inherit"><strong>[PLACEHOLDER]</strong> legal text to be supplied.</p>
+  </div>
+  <p>This page is a stand-in so the footer link works. It contains no legal terms. The final text must be written or approved by the organisation and its legal adviser before launch.</p>
+  <a class="back" href="/">Back to the home page</a>
+</main>
+<script>
+  // Optional: pick up theme colors from the shared content file (same source as the main app). Silent on failure.
+  fetch('/data/content.json').then(function (r) { return r.ok ? r.json() : null; }).then(function (c) {
+    if (!c || !c.theme || !c.theme.colors) return;
+    var t = c.theme.colors, s = document.documentElement.style;
+    var map = { bg: 'background', surface: 'surface', text: 'text', muted: 'textMuted', accent: 'accent', border: 'border', focus: 'primaryText' };
+    Object.keys(map).forEach(function (k) { if (t[map[k]]) s.setProperty('--' + k, t[map[k]]); });
+  }).catch(function () {});
+</script>
+</body>
+</html>

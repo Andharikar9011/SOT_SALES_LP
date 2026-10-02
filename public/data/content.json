@@ -1,0 +1,472 @@
+{
+  "_readme": "ALL editable content lives here. Replace any value that starts with [PLACEHOLDER] . Image values are URLs or paths under /public (e.g. /images/mentors/mentor-1.jpg or https://...). After editing theme colors run: npm run check:theme",
+  "site": {
+    "name": "Skills of Tomorrow",
+    "programName": "The Circle · Sales School",
+    "title": "The Circle · Sales School | Skills of Tomorrow",
+    "description": "A 4-month, 430-hour, placement-backed sales program for fresh graduates in India.",
+    "ogImage": "/og-image.png",
+    "language": "en"
+  },
+  "theme": {
+    "_note": "Placeholder palette. Change to match the final logo. Keep contrast valid (npm run check:theme).",
+    "colors": {
+      "background": "#0B1B33",
+      "surface": "#132B4D",
+      "surfaceRaised": "#1B3A66",
+      "border": "#5F7FAE",
+      "text": "#F4F8FF",
+      "textMuted": "#B4C4DE",
+      "primary": "#1A5FBF",
+      "onPrimary": "#FFFFFF",
+      "primaryText": "#7DB2FF",
+      "accent": "#FF6B35",
+      "onAccent": "#1A0A02",
+      "success": "#4ADE80",
+      "error": "#FF8A8A",
+      "warning": "#FBBF24"
+    },
+    "scene": {
+      "sceneBackground": "#0B1B33",
+      "globeBase": "#1A5FBF",
+      "globeAccent": "#2F7BE0",
+      "globeLight": "#FFD9B8",
+      "characterBody": "#F4F8FF",
+      "characterAccent": "#FF6B35",
+      "cohortColors": [
+        "#FF6B35",
+        "#7DB2FF",
+        "#F4C95D",
+        "#8EE3C8",
+        "#E59AD0"
+      ]
+    }
+  },
+  "images": {
+    "logo": "/images/logo.svg",
+    "logoAlt": "Skills of Tomorrow",
+    "companies": [
+      {
+        "name": "[PLACEHOLDER] Company A",
+        "src": "/images/companies/company-1.svg",
+        "alt": "[PLACEHOLDER] Company A logo"
+      },
+      {
+        "name": "[PLACEHOLDER] Company B",
+        "src": "/images/companies/company-2.svg",
+        "alt": "[PLACEHOLDER] Company B logo"
+      },
+      {
+        "name": "[PLACEHOLDER] Company C",
+        "src": "/images/companies/company-3.svg",
+        "alt": "[PLACEHOLDER] Company C logo"
+      }
+    ]
+  },
+  "header": {
+    "nav": [
+      {
+        "label": "Program",
+        "target": "program"
+      },
+      {
+        "label": "Curriculum",
+        "target": "curriculum"
+      },
+      {
+        "label": "Outcomes",
+        "target": "outcomes"
+      },
+      {
+        "label": "Fees",
+        "target": "fees"
+      },
+      {
+        "label": "Hire from us",
+        "href": "mailto:hire@skillsoftomorrow.com"
+      }
+    ],
+    "cta": {
+      "label": "Apply for Cohort"
+    }
+  },
+  "hero": {
+    "headline": "Your degree got you here.",
+    "subheadline": "This gets you hired.",
+    "description": "A 4-month, 430-hour sales program built to take fresh graduates from 'no callbacks' to a real sales career. Placement-backed, or your money back.",
+    "fabLabel": "Know More",
+    "stages": [
+      {
+        "id": "apply",
+        "label": "Apply",
+        "caption": "Fill in the form. It takes two minutes."
+      },
+      {
+        "id": "learn",
+        "label": "Learn",
+        "caption": "Join the cohort. Learn from people who sell for a living."
+      },
+      {
+        "id": "placed",
+        "label": "Placed",
+        "caption": "Step into a real sales role."
+      }
+    ],
+    "placedCard": {
+      "jobTitle": "[PLACEHOLDER] Sales Development Representative",
+      "company": "[PLACEHOLDER] Company A",
+      "salaryRange": "[PLACEHOLDER] ₹X – ₹Y LPA"
+    }
+  },
+  "problemFraming": {
+    "icon": "rejection-letter",
+    "heading": "Your degree got you here.",
+    "subheading": "This gets you hired.",
+    "narrative": "Most fresh grads face rejection after rejection. Why? Because colleges don't teach practical sales skills.",
+    "stat": "Entry-level sales is India's largest hiring category. Yet nobody teaches you how to do it.",
+    "cta": "Let's change that."
+  },
+  "valueProps": [
+    {
+      "value": "430",
+      "unit": "hrs",
+      "label": "Live training"
+    },
+    {
+      "value": "60+",
+      "unit": "",
+      "label": "On-camera assessments"
+    },
+    {
+      "value": "12",
+      "unit": "mo",
+      "label": "Placement support"
+    },
+    {
+      "value": "Placement-backed",
+      "unit": "",
+      "label": "Or your money back"
+    },
+    {
+      "value": "Real",
+      "unit": "",
+      "label": "Industry mentors"
+    },
+    {
+      "value": "Limited",
+      "unit": "",
+      "label": "Seats per cohort"
+    },
+    {
+      "value": "Capstone",
+      "unit": "",
+      "label": "+ internship as proof of work"
+    }
+  ],
+  "timeline": {
+    "heading": "How it works",
+    "phases": [
+      {
+        "name": "Foundation",
+        "weeks": "1-2",
+        "modules": [
+          "Sales fundamentals",
+          "Soft skills",
+          "Communication basics"
+        ]
+      },
+      {
+        "name": "Craft",
+        "weeks": "3-6",
+        "modules": [
+          "Discovery calls",
+          "Objection handling",
+          "Negotiation",
+          "Closing techniques"
+        ]
+      },
+      {
+        "name": "Tools",
+        "weeks": "7-10",
+        "modules": [
+          "CRM platforms",
+          "Sales tech stack",
+          "Analytics & reporting"
+        ]
+      },
+      {
+        "name": "Proof",
+        "weeks": "11-16",
+        "modules": [
+          "Live capstone sales",
+          "Industry internship",
+          "Job interview prep"
+        ]
+      }
+    ]
+  },
+  "fees": {
+    "heading": "Fees",
+    "amount": "[PLACEHOLDER] ₹X",
+    "note": "[PLACEHOLDER] Scholarships and EMI options available. Contact us for details.",
+    "cta": "Talk to us"
+  },
+  "outcomes": {
+    "heading": "Outcomes",
+    "note": "[PLACEHOLDER] Add verified placement figures before launch. None are shown until real data is added.",
+    "showCompanyLogos": true
+  },
+  "faqHeading": "Questions, answered",
+  "faq": [
+    {
+      "question": "Will this really help me get hired?",
+      "answer": "[PLACEHOLDER] Add your verified placement rate. Our placement-backed guarantee means we own the risk."
+    },
+    {
+      "question": "What if I don't finish the program?",
+      "answer": "[PLACEHOLDER] Confirm terms. We offer flexible timelines and support."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "The program fee is [PLACEHOLDER] ₹X. Scholarships and EMI options are available. Email hello@skillsoftomorrow.com for details."
+    },
+    {
+      "question": "Can I do this while working?",
+      "answer": "[PLACEHOLDER] Confirm schedule. Classes are planned for evenings (7-9 PM IST) with weekend cohort sessions."
+    },
+    {
+      "question": "What if I don't get placed?",
+      "answer": "[PLACEHOLDER] Confirm refund terms. The program is placement-backed."
+    },
+    {
+      "question": "Are there any prerequisites?",
+      "answer": "No. Any degree stream and any background. If you want a real sales career, you're in."
+    },
+    {
+      "question": "How do I know if this is for me?",
+      "answer": "Book a call with us. We'll talk through your goals and see if it's the right fit."
+    },
+    {
+      "question": "What companies are hiring from your program?",
+      "answer": "[PLACEHOLDER] List hiring companies. See the outcomes section."
+    }
+  ],
+  "mentors": [
+    {
+      "id": "mentor-1",
+      "name": "[PLACEHOLDER] Mentor One",
+      "title": "Sales Director",
+      "company": "[PLACEHOLDER] Tech Company A",
+      "bio": "[PLACEHOLDER] 10+ years of sales experience.",
+      "image": "/images/mentors/mentor-1.svg",
+      "imageAlt": "[PLACEHOLDER] Portrait of Mentor One",
+      "teaches": [
+        "Foundation",
+        "Craft"
+      ],
+      "schedule": "[PLACEHOLDER] Mon, Wed 7-9 PM IST"
+    },
+    {
+      "id": "mentor-2",
+      "name": "[PLACEHOLDER] Mentor Two",
+      "title": "VP Sales",
+      "company": "[PLACEHOLDER] Tech Company B",
+      "bio": "[PLACEHOLDER] Built sales teams from scratch.",
+      "image": "/images/mentors/mentor-2.svg",
+      "imageAlt": "[PLACEHOLDER] Portrait of Mentor Two",
+      "teaches": [
+        "Tools",
+        "Proof"
+      ],
+      "schedule": "[PLACEHOLDER] Tue, Thu 7-9 PM IST"
+    }
+  ],
+  "form": {
+    "title": "Join The Circle · Sales School",
+    "subtitle": "Fill in your details to apply",
+    "trustLine": "We own the risk. Placement-backed.",
+    "submitLabel": "Submit",
+    "cancelLabel": "Cancel",
+    "submitEndpoint": "",
+    "submitFormat": "json",
+    "_submitFormat_note": "json (default) | formspree | form-urlencoded | google-apps-script (no-cors: the response cannot be read, so any completed request counts as success). See docs/FORM_BACKEND_SETUP.md.",
+    "minSubmitSeconds": 1,
+    "_minSubmitSeconds_note": "Submissions faster than this many seconds after the form opens are treated as bots (silently shown as success, nothing sent).",
+    "_submitEndpoint_note": "Leave empty for demo mode (nothing is sent, no data stored). Set to a URL (Formspree, Google Apps Script, your API) to POST the form as JSON.",
+    "degreeOptions": [
+      "B.Com",
+      "BBA",
+      "B.A.",
+      "B.Sc.",
+      "B.Tech / B.E.",
+      "MBA / PGDM",
+      "Other"
+    ],
+    "statusOptions": [
+      "Recent graduate",
+      "Job seeker",
+      "Career changer"
+    ]
+  },
+  "booking": {
+    "provider": "calendly",
+    "calendlyUrl": "[PLACEHOLDER] https://calendly.com/YOUR_USERNAME/intro-call",
+    "title": "Let's Schedule Your Call",
+    "subtitle": "Pick a time that works for you",
+    "footnote": "Confirmation email coming your way",
+    "fallbackEmail": "hello@skillsoftomorrow.com",
+    "prefill": false,
+    "_prefill_note": "false (default, privacy): Calendly asks for name/email itself. true: name and email from the application form are passed to Calendly in the embed URL."
+  },
+  "footer": {
+    "links": {
+      "company": [
+        {
+          "label": "Program",
+          "target": "program"
+        },
+        {
+          "label": "Curriculum",
+          "target": "curriculum"
+        },
+        {
+          "label": "Outcomes",
+          "target": "outcomes"
+        },
+        {
+          "label": "Hire from us",
+          "href": "mailto:hire@skillsoftomorrow.com"
+        }
+      ],
+      "legal": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy.html"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms.html"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund.html"
+        }
+      ]
+    },
+    "social": [
+      {
+        "label": "LinkedIn",
+        "href": ""
+      },
+      {
+        "label": "Instagram",
+        "href": ""
+      },
+      {
+        "label": "Twitter",
+        "href": ""
+      }
+    ],
+    "contact": {
+      "email": "hello@skillsoftomorrow.com",
+      "hireEmail": "hire@skillsoftomorrow.com"
+    },
+    "copyright": "© 2026 Skills of Tomorrow. All rights reserved."
+  },
+  "analytics": {
+    "provider": "none",
+    "id": "",
+    "domain": "",
+    "endpoint": "",
+    "respectDnt": true,
+    "requireConsent": false,
+    "_note": "provider: none | ga4 (set id G-XXXXXXX) | plausible (set domain) | custom (set endpoint, https). respectDnt: honour Do Not Track / Global Privacy Control. requireConsent: hold all tracking until setAnalyticsConsent(true) is called. See docs/ANALYTICS.md."
+  },
+  "ui": {
+    "_note": "Interface strings (labels, aria-labels, validation messages). Edit freely. {n}, {total}, {label} are substituted at runtime.",
+    "skipLink": "Skip to content",
+    "close": "Close",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "navLabel": "Main",
+    "mobileNavLabel": "Mobile",
+    "loading": "Loading",
+    "contentError": "Content could not be loaded. Please refresh the page.",
+    "sceneLabel": "Interactive 3D scene of the program journey",
+    "controlsLabel": "Scene controls",
+    "rotateLeft": "Rotate globe left",
+    "rotateRight": "Rotate globe right",
+    "pauseMotion": "Pause motion",
+    "resumeMotion": "Resume motion",
+    "stageIndicatorLabel": "Program stages",
+    "stageAnnounce": "Stage {n} of {total}: {label}.",
+    "stageButton": "Stage {n}: {label}",
+    "hintAdvance": "Tap to continue",
+    "hintApply": "Tap to apply",
+    "drawerLabel": "More about the program",
+    "drawerHandle": "Drag down to close",
+    "fabOpenLabel": "Show program details",
+    "fabCloseLabel": "Hide program details",
+    "statsLabel": "Program at a glance",
+    "phaseLabel": "Phase",
+    "weeksLabel": "Weeks",
+    "modulesLabel": "Modules",
+    "mentorsHeading": "Mentors",
+    "mentorsHint": "Select a mentor to see details",
+    "teachesLabel": "Teaches",
+    "scheduleLabel": "Schedule",
+    "mentorCardLabel": "Mentor details",
+    "companiesHeading": "[PLACEHOLDER] Companies hiring from The Circle",
+    "placedCardLabel": "Example placement",
+    "footerCompany": "Company",
+    "footerLegal": "Legal",
+    "footerContact": "Contact",
+    "footerHire": "For employers",
+    "footerSocial": "Follow us",
+    "form": {
+      "required": "(required)",
+      "optional": "(optional)",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "phone": "Phone",
+        "degree": "Degree / background",
+        "status": "Current status",
+        "message": "Message"
+      },
+      "selectPlaceholder": "Select an option",
+      "messagePlaceholder": "Anything you want us to know",
+      "errors": {
+        "required": "{field} is required.",
+        "email": "Enter a valid email address, like name@example.com.",
+        "phone": "Enter a valid phone number (10 digits, optionally starting with +91).",
+        "name": "Enter your full name (at least 2 characters)."
+      },
+      "errorSummary": "Please fix the following before submitting:",
+      "submitting": "Submitting",
+      "submitError": "We could not send your application. Please check your connection and try again.",
+      "submitErrorOffline": "You appear to be offline. Reconnect to the internet and try again.",
+      "submitErrorTimeout": "The request took too long. Please try again in a moment.",
+      "submitErrorClient": "We could not accept your application. Please check your details or try again later.",
+      "submitErrorServer": "Our server had a problem. Please try again in a few minutes.",
+      "successToast": "Application received."
+    },
+    "booking": {
+      "loading": "Loading the calendar",
+      "notConfigured": "Calendly URL not configured. Add your event link to booking.calendlyUrl in content.json.",
+      "error": "The calendar could not be loaded.",
+      "emailUs": "Email us to book a call",
+      "confirmed": "Your call is scheduled.",
+      "confirmedNote": "Check your email for the invite. This window closes in a few seconds.",
+      "closingIn": "Closing in {n}s. Tap or press a key to keep this open.",
+      "keepOpen": "This window will stay open until you close it.",
+      "close": "Close",
+      "frameLabel": "Booking calendar"
+    },
+    "toastDismiss": "Dismiss",
+    "fallback": {
+      "stagesLabel": "How it works",
+      "stepLabel": "Step {n}"
+    }
+  }
+}
